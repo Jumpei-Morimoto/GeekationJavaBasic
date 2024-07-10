@@ -8,10 +8,12 @@ public class GeekIntroduction {
     }
 
     public static void specialSkill(int num1 , int num2){
-        if(num2 <= num1){
+    	if(num1<1 || num2<1){
+    	    System.out.println("num1とnum2は0より大きい値にしてください。");
+        }else if(num2 <= num1){
             System.out.println("num2はnum1より大きい値にしてください。");
         }else{
-    	    for(int i = num1 ; i<=num2 ;i++){
+            for(int i = num1 ; i<=num2 ;i++){
               if(num1<1 || num2<1){
         	    System.out.println("num1とnum2は0より大きい値にしてください。");
                 break;
